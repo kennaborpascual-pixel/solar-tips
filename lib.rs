@@ -23,9 +23,10 @@ pub mod solar_tips {
             ],
         )?;
 
-        let registro = &mut ctx.accounts.registro_propina;
-        registro.ultimo_donador = *ctx.accounts.donador.key;
-        registro.monto_total += monto;
+        // Comentamos esto para que no busque la cuenta que no está inicializada
+        // let registro = &mut ctx.accounts.registro_propina;
+        // registro.ultimo_donador = *ctx.accounts.donador.key;
+        // registro.monto_total += monto;
 
         msg!("Propina enviada con exito. ¡Gracias por su apoyo!");
         Ok(())
@@ -38,10 +39,11 @@ pub struct EnviarPropina<'info> {
     // First 8 bytes are default account discriminator,
     // next 8 bytes come from NewAccount.data being type u64.
     // (u64 = 64 bits unsigned integer = 8 bytes)
-    #[account(init_if_needed, payer = donador, space = 8 + 32 + 8)]
-    pub registro_propina: Account<'info, Registro>,
+    pub registro_propina: UncheckedAccount<'info>, 
     #[account(mut)]
     pub donador: Signer<'info>,
+    #[account(mut)]
+    /// CHECK: Cuenta receptora
     pub receptor: AccountInfo<'info>,
     pub system_program: Program<'info, System>,
 }
