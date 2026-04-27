@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_lang::solana_program::system_instruction;
 // This is your program's public key and it will update
 // automatically when you build the project.
-declare_id!("8F7mNbgH5LZC5hhSiyKch8c6vKVAaTZGCNqWsGRTKHtL");
+declare_id!("");
 
 #[program]
 pub mod solar_tips {
