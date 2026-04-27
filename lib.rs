@@ -22,8 +22,6 @@ pub mod solar_tips {
                 ctx.accounts.receptor.to_account_info(),
             ],
         )?;
-
-        // Comentamos esto para que no busque la cuenta que no está inicializada
         // let registro = &mut ctx.accounts.registro_propina;
         // registro.ultimo_donador = *ctx.accounts.donador.key;
         // registro.monto_total += monto;
