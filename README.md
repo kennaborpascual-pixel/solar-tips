@@ -9,4 +9,4 @@ Este proyecto es un sistema de propinas descentralizado construido en la red de 
 
 ## Enlaces Útiles
 - [Ver programa en Solscan]([https://solscan.io/account/8F7mNbgH5LZC5hhSiyKch8c6vKVAaTZGCNqWsGRTKHtL?cluster=devnet](https://solscan.io/account/8F7mNbgH5LZC5hhSiyKch8c6vKVAaTZGCNqWsGRTKHtL?cluster=devnet))
-- **Signature de Transacion: ** 4oMJbdqRibCM5nTMwfXzjwGhy6RVpGAUC5gzDv7DmcqzkTPs7BvGLgViPBqZksGztK8fKtGHu9s3nw4ALpCxwW9Y
+- **Signature de Transacion:** 4oMJbdqRibCM5nTMwfXzjwGhy6RVpGAUC5gzDv7DmcqzkTPs7BvGLgViPBqZksGztK8fKtGHu9s3nw4ALpCxwW9Y
